@@ -3,8 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=1200">
-<title>Impact Evaluation Lab · KDI School</title>
-<meta name="description" content="The Impact Evaluation Lab at the KDI School of Public Policy and Management generates rigorous causal evidence for development policy.">
 <script src="./support.js"></script>
 </head>
 <body>
@@ -31,7 +29,7 @@ a{color:#14402F;text-decoration:underline;text-underline-offset:3px}a:hover{colo
       <nav style="display:flex;gap:30px;align-items:baseline;font-size:12px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase">
         <a href="#about" style="color:#14402F;text-decoration:none" style-hover="color:#A87E28">About</a>
         <a href="#" style="color:#14402F;text-decoration:none" style-hover="color:#A87E28">Research</a>
-        <a href="#" style="color:#14402F;text-decoration:none" style-hover="color:#A87E28">People</a>
+        <a href="people.html" style="color:#14402F;text-decoration:none" style-hover="color:#A87E28">People</a>
         <a href="conference.html" style="color:#14402F;text-decoration:none" style-hover="color:#A87E28">Conference</a>
         <a href="#" style="color:#14402F;text-decoration:none" style-hover="color:#A87E28">News</a>
       </nav>
@@ -63,7 +61,10 @@ a{color:#14402F;text-decoration:underline;text-underline-offset:3px}a:hover{colo
     </div>
   </section>
 
-  <sc-if value="{{ showBanner }}" hint-placeholder-val="{{ true }}">
+  <section style="border-top:1px solid #D7DBD7">
+    <img src="photos/home-hero.jpg" alt="Wide field photo" style="display:block;width:100%;height:440px;object-fit:cover">
+  </section>
+
     <section style="background:#14402F;position:relative;overflow:hidden">
       <img src="photos/conf-0049.jpg" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;filter:grayscale(1) contrast(1.08)">
       <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(100deg, rgba(13,42,31,0.95) 0%, rgba(13,42,31,0.88) 55%, rgba(13,42,31,0.76) 100%)"></div>
@@ -80,7 +81,6 @@ a{color:#14402F;text-decoration:underline;text-underline-offset:3px}a:hover{colo
         <a href="program-2026.html" style="color:#FFFFFF;font-size:12px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;border:1px solid #FFFFFF;padding:14px 24px;text-decoration:none;white-space:nowrap" style-hover="background:#A87E28;border-color:#A87E28;color:#FFFFFF">View program</a>
       </div>
     </section>
-  </sc-if>
 
   <section id="about" style="border-top:1px solid #D7DBD7;flex:1">
     <div style="max-width:1200px;margin:0 auto;padding:72px 40px 88px;display:grid;grid-template-columns:1fr 2fr;gap:72px">
@@ -108,6 +108,20 @@ a{color:#14402F;text-decoration:underline;text-underline-offset:3px}a:hover{colo
             <div style="font-size:14px;color:#5B6470;line-height:1.6">The annual Development Impact Conference with World Bank DECDI, plus workshops and courses at KDI School.</div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid #D7DBD7;background:#F7F8F7">
+    <div style="max-width:1200px;margin:0 auto;padding:64px 40px 76px;box-sizing:border-box">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:26px">
+        <div style="font-size:11px;font-weight:700;letter-spacing:2.4px;color:#A87E28;text-transform:uppercase">In the field</div>
+        <a href="people.html" style="font-size:13px;font-weight:600;color:#14402F" style-hover="color:#A87E28">Meet the researchers →</a>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px">
+        <img src="photos/home-field-a.jpg" alt="Field photo 1" style="width:100%;aspect-ratio:4/3;object-fit:cover">
+        <img src="photos/home-field-b.jpg" alt="Field photo 2" style="width:100%;aspect-ratio:4/3;object-fit:cover">
+        <img src="photos/home-field-c.jpg" alt="Field photo 3" style="width:100%;aspect-ratio:4/3;object-fit:cover">
       </div>
     </div>
   </section>
