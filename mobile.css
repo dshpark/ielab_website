@@ -1,0 +1,78 @@
+/* Impact Evaluation Lab - mobile overrides (<=700px). Desktop untouched.
+   Selectors match both authored ("font-size:66px") and React-serialized ("font-size: 66px") style attributes. */
+@media (max-width: 700px) {
+  html, body { overflow-x: hidden; }
+  nav { display: none !important; }
+  details.m-nav { display: block !important; position: relative; }
+  details.m-nav summary { list-style: none; cursor: pointer; padding: 6px 2px; display: block; }
+  details.m-nav summary::-webkit-details-marker { display: none; }
+  details.m-nav[open] summary svg { opacity: .5; }
+  .m-menu { position: absolute; top: 42px; right: -6px; z-index: 60; background: #FFFFFF; border: 2px solid #14402F; min-width: 220px; box-shadow: 0 12px 28px rgba(13,42,31,.18); }
+  .m-menu a { display: block; padding: 15px 20px; font-size: 12px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; color: #14402F; text-decoration: none; border-bottom: 1px solid #E2E6E2; }
+  .m-menu a:last-child { border-bottom: none; }
+
+  [style*="max-width:1200px"],
+  [style*="max-width: 1200px"] { padding-left: 22px !important; padding-right: 22px !important; }
+  header [style*="max-width:1200px"], header [style*="max-width: 1200px"] { padding-top: 14px !important; padding-bottom: 14px !important; }
+  header svg[width="42"] { width: 34px; height: 34px; }
+  header [style*="font-size:21px"], header [style*="font-size: 21px"] { font-size: 17px !important; }
+  [style*="font-size:66px"],
+  [style*="font-size: 66px"] { font-size: 36px !important; }
+  [style*="font-size:64px"],
+  [style*="font-size: 64px"] { font-size: 35px !important; }
+  [style*="font-size:54px"],
+  [style*="font-size: 54px"] { font-size: 31px !important; }
+  [style*="font-size:52px"],
+  [style*="font-size: 52px"] { font-size: 31px !important; }
+  [style*="font-size:50px"],
+  [style*="font-size: 50px"] { font-size: 30px !important; }
+  [style*="font-size:46px"],
+  [style*="font-size: 46px"] { font-size: 28px !important; }
+  [style*="font-size:34px"],
+  [style*="font-size: 34px"] { font-size: 25px !important; }
+  [style*="font-size:32px"],
+  [style*="font-size: 32px"] { font-size: 24px !important; }
+  [style*="font-size:30px"],
+  [style*="font-size: 30px"] { font-size: 23px !important; }
+  [style*="font-size:27px"],
+  [style*="font-size: 27px"] { font-size: 22px !important; }
+  [style*="font-size:26px"],
+  [style*="font-size: 26px"] { font-size: 21px !important; }
+  [style*="grid-template-columns:2fr 1fr"],
+  [style*="grid-template-columns: 2fr 1fr"],
+  [style*="grid-template-columns:1fr 2fr"],
+  [style*="grid-template-columns: 1fr 2fr"],
+  [style*="grid-template-columns:1.1fr 0.9fr"],
+  [style*="grid-template-columns: 1.1fr 0.9fr"],
+  [style*="grid-template-columns:1fr 1fr"],
+  [style*="grid-template-columns: 1fr 1fr"],
+  [style*="grid-template-columns:64px 200px 1fr"],
+  [style*="grid-template-columns: 64px 200px 1fr"],
+  [style*="grid-template-columns:200px 170px 1fr"],
+  [style*="grid-template-columns: 200px 170px 1fr"],
+  [style*="grid-template-columns:200px 1fr 240px"],
+  [style*="grid-template-columns: 200px 1fr 240px"],
+  [style*="grid-template-columns:90px 1fr 300px"],
+  [style*="grid-template-columns: 90px 1fr 300px"],
+  [style*="grid-template-columns:170px 1fr"],
+  [style*="grid-template-columns: 170px 1fr"] { grid-template-columns: 1fr !important; }
+  [style*="repeat(4"] { grid-template-columns: repeat(2, 1fr) !important; }
+  [style*="grid-template-columns:104px 1fr"],
+  [style*="grid-template-columns: 104px 1fr"] { grid-template-columns: 84px 1fr !important; }
+  [style*="grid-template-columns:96px 1fr"],
+  [style*="grid-template-columns: 96px 1fr"] { grid-template-columns: 78px 1fr !important; }
+  [style*="gap:72px"],
+  [style*="gap: 72px"] { gap: 28px !important; }
+  [style*="gap:56px"],
+  [style*="gap: 56px"] { gap: 34px !important; }
+  [style*="gap:44px"],
+  [style*="gap: 44px"] { gap: 20px !important; }
+  [style*="display:flex"][style*="gap:44px"],
+  [style*="display: flex"][style*="gap: 44px"],
+  [style*="display:flex"][style*="gap:48px"],
+  [style*="display: flex"][style*="gap: 48px"] { flex-direction: column !important; align-items: flex-start !important; }
+  [style*="border-right:1px solid #34664E"],
+  [style*="border-right: 1px solid rgb(52, 102, 78)"] { border-right: none !important; padding-right: 0 !important; }
+  [style*="height:440px"],
+  [style*="height: 440px"] { height: 250px !important; }
+}
